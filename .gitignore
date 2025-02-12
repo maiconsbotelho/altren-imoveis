@@ -1,0 +1,31 @@
+# Ignore node_modules dentro da pasta frontend
+frontend/node_modules/
+frontend/.pnp
+frontend.pnp.*
+
+frontend/yarn/*
+!frontend/yarn/patches
+!frontend/yarn/plugins
+!frontend/yarn/releases
+!frontend/yarn/versions
+
+# Ignore arquivos de log do npm/yarn
+npm-debug.log
+yarn-error.log
+
+# Ignore pasta de build do Next.js
+frontend/.next
+frontend/dist
+frontend/build
+frontend/.turbo
+
+# Ignore arquivos de configuração de IDE
+.vscode/
+.idea/
+
+# Ignore arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml

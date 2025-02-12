@@ -1,0 +1,13 @@
+
+services:
+  app:
+    build:
+      context: ./frontend   # Diretório onde está o código do Next.js
+      dockerfile: Dockerfile # Caminho para o Dockerfile dentro da pasta frontend
+    ports:
+      - "3000:3000"           # Porta de acesso ao Next.js no container
+    volumes:
+      - ./frontend:/app       # Mapeia a pasta frontend local para a pasta /app no container
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
